@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K Shivakumar - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        /* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    position: sticky;
+    top: 0;
+}
+
+nav h2 {
+    color: #00bcd4;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Home Section */
+.home {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #00bcd4, #673ab7);
+    color: white;
+}
+
+.home h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.home h1 span {
+    color: #ffeb3b;
+}
+
+.home p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: #673ab7;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #222;
+    color: white;
+}
+
+/* Common Section Styling */
+section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #673ab7;
+    margin-bottom: 25px;
+}
+
+/* About */
+#about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #00a0b5;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .home h1 {
+        font-size: 32px;
+    }
+
+    .home p {
+        font-size: 16px;
+    }
+}
+
+    </style>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h2>K Shivakumar</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#interests">Interests</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <h1>Hello, I'm <span>K Shivakumar</span></h1>
+        <p>Welcome to my personal portfolio website.</p>
+        <button>Explore My Portfolio</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            My name is <b>K Shivakumar</b>. I am currently studying
+            B.Tech at <b>Malla Reddy College</b>. I am interested in
+            learning new things, playing games and spending my free time
+            reading books and listening to songs.
+        </p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="card">
+            <h3>B.Tech</h3>
+            <p>Malla Reddy College</p>
+            <p>Currently pursuing my Bachelor's degree.</p>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>📚 Reading Books</h3>
+                <p>I enjoy reading books during my free time.</p>
+            </div>
+
+            <div class="card">
+                <h3>🎵 Listening to Songs</h3>
+                <p>I enjoy listening to music and songs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests">
+        <h2>My Interests</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🏏 Cricket</h3>
+                <p>I enjoy playing cricket with my friends.</p>
+            </div>
+
+            <div class="card">
+                <h3>🤼 Kabaddi</h3>
+                <p>I am also interested in playing kabaddi.</p>
+            </div>
+
+            <div class="card">
+                <h3>🎮 Games</h3>
+                <p>I like playing different games in my free time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 K Shivakumar | My Portfolio</p>
+    </footer>
+
+</body>
+</html>
